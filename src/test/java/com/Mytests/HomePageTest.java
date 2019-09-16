@@ -31,4 +31,10 @@ public class HomePageTest extends BaseTest {
 		System.out.println("Workspace link working");
 		//Assert.assertTrue(homepage.clickworkspace());
 	}
+	
+	@Test
+	public void Verifycontentlink()
+	{
+		System.out.println("Verify content link");
+	}
 }
