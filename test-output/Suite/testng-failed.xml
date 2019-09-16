@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="LMS application chrome" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Mytests.LoginTest"/>
+      <class name="com.Mytests.HomePageTest"/>
+    </classes>
+  </test> <!-- LMS application chrome -->
+  <test name="LMS application chrome(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Mytests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="doLoginTest"/>
+        </methods>
+      </class> <!-- com.Mytests.LoginTest -->
+      <class name="com.Mytests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="VerifyWorkspacelink"/>
+          <include name="VerifyHomePageTitle"/>
+        </methods>
+      </class> <!-- com.Mytests.HomePageTest -->
+    </classes>
+  </test> <!-- LMS application chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
