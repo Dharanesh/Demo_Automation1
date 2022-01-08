@@ -1,8 +1,8 @@
 package com.Mytests;
 
-import com.utils.Test1;
+import com.utils.UTILITIES;
 
-public class Demo333 extends Test1 {
+public class Demo333 extends UTILITIES {
 
     @Override
     public int div() {

@@ -1,9 +1,8 @@
 package com.Mytests;
 
-import com.utils.Test1;
-import sun.awt.windows.WPrinterJob;
+import com.utils.UTILITIES;
 
-public class Demo222 extends Test1 {
+public class Demo222 extends UTILITIES {
 
     public void multiplication()
     {
