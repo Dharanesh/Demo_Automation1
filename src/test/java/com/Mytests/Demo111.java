@@ -1,8 +1,8 @@
 package com.Mytests;
 
-import com.utils.UTILITIES;
+import com.utils.UTILITIES_Test;
 
-public class Demo111 extends UTILITIES {
+public class Demo111 extends UTILITIES_Test {
 
     public void substration()
     {
