@@ -1,8 +1,8 @@
 package com.Mytests;
 
-import com.utils.UTILITIES;
+import com.utils.BORISEVIC_UTILITIES;
 
-public class Demo111 extends UTILITIES {
+public class Demo111 extends BORISEVIC_UTILITIES {
 
     public void substration()
     {
